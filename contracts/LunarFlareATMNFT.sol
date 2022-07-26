@@ -31,12 +31,12 @@ contract LunarFlareATMNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter 
     Counters.Counter private _tokenSupply;
     Counters.Counter private _freeSupply;
 
-    uint256 public constant MAX_TOKENS = 3100;
+    uint256 public constant MAX_TOKENS = 10000;
     uint256 public publicMintMaxLimit = 50;
     uint256 public whitelistMintMaxLimit = 50;
-    uint256 public tokenPrice = 0.14 ether;
-    uint256 public whitelistTokenPrice = 0.055 ether;
-    uint256 public maxWhitelistPassMints = 900;
+    uint256 public tokenPrice = 1.5 ether;
+    uint256 public whitelistTokenPrice = 1.5 ether;
+    uint256 public maxWhitelistPassMints = 10000;
 
     bool public publicMintIsOpen = false;
     bool public privateMintIsOpen = true;
