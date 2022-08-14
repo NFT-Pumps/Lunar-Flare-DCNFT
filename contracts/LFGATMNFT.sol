@@ -11,9 +11,8 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/finance/PaymentSplitter.sol";
 
-contract LFGATMNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter {
+contract LFGATMNFT is Ownable, ERC721, ERC721URIStorage {
     using Counters for Counters.Counter;
     using ECDSA for bytes32;
     using Strings for uint256;
@@ -95,13 +94,9 @@ contract LFGATMNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter {
         address _vault,
         address _signer,
         string memory __baseTokenURI,
-        string memory _hiddenMetadataUri,
-        address[] memory _payees,
-        uint256[] memory _shares
+        string memory _hiddenMetadataUri
     )
-        payable
         ERC721(contractName, contractSymbol)
-        PaymentSplitter(_payees, _shares)
     {
         _ContractVault = _vault;
         _ClaimsPassSigner = _signer;
