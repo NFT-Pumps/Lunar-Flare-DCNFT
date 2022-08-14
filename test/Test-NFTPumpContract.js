@@ -39,7 +39,7 @@ if (true == true)
             let ethBalance = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address));
             console.log("Start Balance: " + ethBalance);
 
-            const currentContract = await ethers.getContractFactory("LunarFlareATMNFT");
+            const currentContract = await ethers.getContractFactory("HaywireHorseyNFT");
             currentToken = await currentContract.deploy(
                 'Test Contract',
                 'Test',
@@ -162,7 +162,7 @@ if (true == true)
 
                 //Enable Mint Whitelist
                 await currentToken.togglePresaleMint();
-                await currentToken.togglePresaleMint();
+                // await currentToken.togglePresaleMint();
 
                 const totalSupply = await currentToken.totalSupply();
 
@@ -391,6 +391,10 @@ it("Burn Token", async function () {
 
 it("Set Multiple Parameters", async function () {
     await currentToken.setParams('70000000000000000', '50000000000000000', '20', '5', true, true);
+});
+
+it("Set Multiple", async function () {
+    await currentToken.updateMultiplier(1);
 });
 
 it("Gets Total Supply", async function () {

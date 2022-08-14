@@ -41,7 +41,7 @@ async function getClaimCodes() {
         { address : '0x92a293f563872671750060Ab5935e1117c3f7294', qty : 4},
         { address : '0xd865C9b31B5d0232fFdB8D2Db8D8006FEB955935', qty : 4},
         { address : '0x62b615759E6Ba4754d33d69F799AAf386a6EF279', qty : 4},
-        { address : '0xCd43AdcB61949ab14D3f4574BFbDA53d46389715', qty : 5},
+        { address : '0xCd43AdcB61949ab14D3f4574BFbDA53d46389715', qty : 6},
         { address : '0xd4F1AcE4299fE40566aDF8813a46f48bB0383e37', qty : 4},
         { address : '0xbF9A9d3D1A330AE27c5d9632A17F20D129c40209', qty : 4},
         { address : '0x23AEb45378AD26437cE1c3dD0ac4A015E9865596', qty : 4},
@@ -49,6 +49,10 @@ async function getClaimCodes() {
         { address : '0xa7531F5A9D56089A79EBCb295bAba41bED80ca22', qty : 4},
         { address : '0xAB8EA35D2e200bF9089b7E9Bee47568Fdb211012', qty : 4},
         { address : '0xa894077e96375BdBdA09d93627bbe7E4Ca52fAd1', qty : 4},
+        { address : '0x2a9FFCFd150ce08E0f28Ca0c372fc8edE6eeDe3F', qty : 2},
+        { address : '0x0Ff3c045432b54fC061CaAD4d10057Da3ed08cdC', qty : 4},
+        { address : '0x4985a9B9c0CbeB430a4C7C082C5E65FB633f3603', qty : 4},
+        { address : '0x8912e40d291693C7A86C418D52b46766780C6989', qty : 6},
         { address : '0xf3C11bA805765Bd0aFce51f605FfDe875e04ef17', qty : 4}       
     ]      
     
@@ -93,7 +97,7 @@ async function getClaimCodes() {
 
     // make a new logger
     const myLogger = new Console({
-    stdout: fs.createWriteStream("ProjectWhitelist-signed-coupons.txt"),
+    stdout: fs.createWriteStream("0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266-signed-coupons.txt"),
     stderr: fs.createWriteStream("errStdErr.txt"),
     });
 
