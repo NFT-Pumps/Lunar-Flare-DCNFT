@@ -13,7 +13,7 @@ import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/finance/PaymentSplitter.sol";
 
-contract HaywireHorseyNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter {
+contract LFGATMNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter {
     using Counters for Counters.Counter;
     using ECDSA for bytes32;
     using Strings for uint256;
@@ -30,12 +30,12 @@ contract HaywireHorseyNFT is Ownable, ERC721, ERC721URIStorage, PaymentSplitter 
     Counters.Counter private _tokenSupply;
     Counters.Counter private _freeSupply;
 
-    uint256 public constant MAX_TOKENS = 777;
+    uint256 public constant MAX_TOKENS = 10000;
     uint256 public publicMintMaxLimit = 50;
     uint256 public whitelistMintMaxLimit = 50;
     uint256 public tokenPrice = 0.01 ether;
     uint256 public whitelistTokenPrice = 0.00 ether;
-    uint256 public maxWhitelistPassMints = 777;
+    uint256 public maxWhitelistPassMints = 10000;
     uint256 public buyBonusMultiplier = 1;
 
     bool public publicMintIsOpen = false;

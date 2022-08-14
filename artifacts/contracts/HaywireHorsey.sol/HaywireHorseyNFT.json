@@ -1,6 +1,6 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "HaywireHorseyNFT",
+  "contractName": "LFGATMNFT",
   "sourceName": "contracts/HaywireHorsey.sol",
   "abi": [
     {
@@ -1108,7 +1108,7 @@
               "type": "uint8"
             }
           ],
-          "internalType": "struct HaywireHorseyNFT.WhitelistClaimPass",
+          "internalType": "struct LFGATMNFT.WhitelistClaimPass",
           "name": "whitelistClaimPass",
           "type": "tuple"
         }
